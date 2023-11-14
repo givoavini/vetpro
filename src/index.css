@@ -9,8 +9,8 @@ body, html {
   margin: 0;
   padding: 0;
 }
-.app-container {
-  margin-top: 75px; 
+ .app-container {
+  margin-top: 73px; 
   margin-left: 200px;
 } 
 @media screen and (max-width: 768px) {
@@ -127,35 +127,19 @@ input {
 
 
 /* NavbarTop */
-
-.navbar-top {
-  background-color: rgb(217, 217, 217);
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
 .logo-image {
   width: 150px;
   height: auto; 
   margin-bottom: 5px;
   margin-left: 35px;
+  margin-right: 400px;
 }
+.logo-imagen {
+  width: 150px;
+  height: auto; 
+  margin-bottom: 5px;
+  margin-left: 140px;
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.search-input {
-  width: 150px; 
-  font-size: 12px; 
-}
-
-input {
-  padding: 8px;
-  margin-right: 20px;
 }
 
 .welcome {
@@ -163,21 +147,6 @@ input {
   font-weight: bold;
 }
 
-.search-container {
-  position: relative;
-}
-
-.search-icon {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  background-color: #f4f4f4; 
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.search-icon svg {
-  margin-right: 5px;
-}
 
 .search-input {
   padding: 8px;
@@ -187,7 +156,6 @@ input {
 
 /* Navbarleft */
 .vertical-nav {
-
   background-color: rgb(217, 217, 217);
   color: black;
   width: 200px;
@@ -429,12 +397,7 @@ hr {
   margin-bottom: 5px;
 }
 
-.form-control {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+
 
 .foto-container {
   width: 100%;
@@ -468,9 +431,9 @@ hr {
     margin-right: 8px;
   }
 
-  font-size: 16px; /* Ajusta el tamaño del texto */
-  width: 150px; /* Ajusta el ancho del botón según sea necesario */
-  height: 150px; /* Ajusta la altura del botón según sea necesario */
+  font-size: 16px; 
+  width: 150px; 
+  height: 150px; 
 
   &:hover {
     background-color: rgba(13, 0, 255);
@@ -505,8 +468,8 @@ hr {
   border: 1px solid #ccc;
 }
 .card-mascota {
-  width: 100%; /* Establece el ancho deseado para tu tarjeta */
-  margin: 20px auto; /* Ajusta los márgenes según sea necesario */
+  width: 100%;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;

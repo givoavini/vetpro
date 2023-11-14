@@ -24,41 +24,48 @@ function LoginPage() {
 
   return (
     <div className="login-container with-background">
-      <div className="login-card">
-        <img src={perroLogo} alt="Logo de Perro" className="logo-image" />
+      <div className="container mt-5">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="card">
+              <img src={perroLogo} alt="Logo de Perro" className="card-img-top p-4 mx-auto logo-imagen" />
 
-        <div className="card-body">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="email">Correo Electrónico:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={email}
-                onChange={handleEmailChange}
-                className="form-control"
-              />
+              <div className="card-body text-center">
+                <form onSubmit={handleSubmit} className="mx-auto">
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">Correo Electrónico:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={email}
+                      onChange={handleEmailChange}
+                      className="form-control"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="password" className="form-label">Contraseña:</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      value={password}
+                      onChange={handlePasswordChange}
+                      className="form-control"
+                    />
+                  </div>
+
+                  <button type="submit" className="btn btn-primary">Ingresar</button>
+                </form>
+
+                <p className="mt-3">¿Olvidaste tu contraseña? <a href="/recuperar">Recupérala aquí</a></p>
+              </div>
             </div>
-
-            <div className="form-group">
-              <label htmlFor="password">Contraseña:</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={password}
-                onChange={handlePasswordChange}
-                className="form-control"
-              />
-            </div>
-
-            <button type="submit" className="submit-button">Ingresar</button>
-          </form>
-
-          <p className="forgot-password">¿Olvidaste tu contraseña? <a href="/recuperar">Recupérala aquí</a></p>
+          </div>
         </div>
       </div>
+
     </div>
   );
 }
