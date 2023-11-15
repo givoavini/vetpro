@@ -21,6 +21,7 @@ const CrearUsuario = () => {
 
     return (
         <div className='usuarios-background centro'>
+            
             <div className="card">
                 <div className="card-header">
                     <h2>Nuevo Usuario</h2>

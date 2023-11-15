@@ -6,7 +6,8 @@ import {
     faUser,
     faPaw,
     faCalendar,
-    faClinicMedical
+    faClinicMedical,
+    faTimes
 } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
@@ -50,6 +51,12 @@ const Sidebar = () => {
             <Link to="/veterinarios" className="nav-link">
                 <FontAwesomeIcon icon={faClinicMedical} />
                 <span>Veterinarios</span>
+            </Link>
+        </li>
+        <li className="nav-item">
+            <Link to="/" className="nav-link">
+                <FontAwesomeIcon icon={faTimes} />
+                <span>cerrar sesion</span>
             </Link>
         </li>
     </ul>

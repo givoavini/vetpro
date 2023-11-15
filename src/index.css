@@ -39,19 +39,33 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-.usuarios-background{
+.usuarios-background {
+  background-image: url('./assets/imagenes/usuariosVet.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.usuario-background {
   background-image: url('./assets/imagenes/usuariosVet.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
 }
+
 .mascotas-background{
   background-image: url('./assets/imagenes/GatoyPerro.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
+  
 }
 .crearMascota-background{
   background-image: url('./assets/imagenes/addPet.jpg');
@@ -59,6 +73,54 @@ body, html {
   background-position: center;
   height: 100vh;
   display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.registrarcita-background{
+  background-image: url('./assets/imagenes/Citas.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  padding-bottom: 40px;
+}
+.historial-background{
+  background-image: url('./assets/imagenes/HistorialPets.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+
+.agenda-background{
+  background-image: url('./assets/imagenes/agendaCita.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+
+.veterinario-background {
+  background-image: url('./assets/imagenes/Veterina.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+.cita-background{
+  background-image: url('./assets/imagenes/regVisita.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 .centro{
   display: flex;
@@ -342,13 +404,21 @@ input {
 
 /*formulario Nuevo Usuario*/
 .card {
-  width: 400px;
+  width: 80%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.5); 
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 10px;
 }
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; 
+}
+
 
 .card-header {
   background-color: #333;

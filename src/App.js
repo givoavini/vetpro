@@ -9,6 +9,14 @@ import Usuarios from "./pages/usuarios";
 import CrearUsuario from "./pages/crearUsuario";
 import Mascotas from "./pages/mascotas";
 import CrearMascota from "./pages/crearMascota";
+import Veterinario from "./pages/veterinarios";
+import Consultas from "./pages/consulta";
+import DetalleUsuario from "./pages/detalleUsuario";
+import MascotaCard from "./pages/detalleMascota";
+import Mascotaregistros from "./pages/mascota-registros";
+import Crearcita from "./pages/agendaCita";
+import CalendarioCita from "./pages/calendarioCitas";
+import DetalleCita from "./pages/detalleCita";
 
 
 function App() {
@@ -28,9 +36,17 @@ function App() {
                   <Route path="/" element={<Navigate to="/index" />} />
                   <Route path="/index" element={<Index />} />
                   <Route path="/usuarios" element={<Usuarios />} />
+                  <Route path="/Detalles-usuario=?" element={<DetalleUsuario />} />
                   <Route path="/crear-usuario" element={<CrearUsuario />} />
                   <Route path="/mascotas" element={<Mascotas />} />
                   <Route path="/crear-mascota" element={<CrearMascota />} />
+                  <Route path="/veterinarios" element={<Veterinario />} />
+                  <Route path="/registar-consulta" element={<Consultas />} />
+                  <Route path="/detalle-mascota=?" element={<MascotaCard />} />
+                  <Route path="/registros-mascota=?" element={<Mascotaregistros />} />
+                  <Route path="/Crear-cita" element={<Crearcita />} />
+                  <Route path="/citas" element={<CalendarioCita />} />
+                  <Route path="/detalle-cita/:fecha" element={<DetalleCita />} />
 
                 </Routes>
               </div>

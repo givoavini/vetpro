@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Usuarios = () => {
+const Veterinario = () => {
     const [usuarios, setUsuarios] = useState([
         // Inicializa aquí tu lista de usuarios
         {
@@ -16,13 +16,13 @@ const Usuarios = () => {
 
 
     return (
-        <div className='usuario-background'>
+        <div className='veterinario-background'>
             <div className="usuarios-container">
                 <div className="usuarios-header">
-                    <h2 className="usuarios-title">Usuarios</h2>
-                    <Link to="/crear-usuario" className="usuarios-agregar-btn">
-                        Crear Usuario
-                    </Link>
+                    <h2 className="usuarios-title">veterinarios</h2>
+                        <Link to="/crear-usuario" className="usuarios-agregar-btn">
+                            Crear Usuario
+                        </Link>
                 </div>
                 <hr className="usuarios-hr" />
 
@@ -49,9 +49,7 @@ const Usuarios = () => {
                                 <td className='text'>{usuario.estado}</td>
                                 <td>
                                     {/* Agrega aquí el enlace o botón para ver detalles */}
-                                    <Link to="/detalles-usuario=?" className="usuarios-detalles-btn">
-                                        Detalles
-                                    </Link>
+                                    <button className="usuarios-detalles-btn">detalles</button>
                                 </td>
                             </tr>
                         ))}
@@ -63,4 +61,4 @@ const Usuarios = () => {
     );
 };
 
-export default Usuarios;
+export default Veterinario;
