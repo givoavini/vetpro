@@ -12,6 +12,8 @@ const DetalleCita = () => {
       mascota: 'Nombre de la mascota',
       propietario: 'Nombre del propietario',
       motivo: 'Motivo de la cita',
+      veterinaria: 'veterinaria 2',
+      veterinario: 'dr Bryan Moreno',
     };
   };
 
@@ -29,7 +31,10 @@ const DetalleCita = () => {
               <p className="mb-2"><strong>Hora:</strong> {informacionCita.hora}</p>
               <p className="mb-2"><strong>Mascota:</strong> {informacionCita.mascota}</p>
               <p className="mb-2"><strong>Propietario:</strong> {informacionCita.propietario}</p>
-              <p className="mb-0"><strong>Motivo:</strong> {informacionCita.motivo}</p>
+              <p className="mb-2"><strong>Motivo:</strong> {informacionCita.motivo}</p>
+              <p className="mb-2"><strong>veterinaria:</strong> {informacionCita.veterinaria}</p>
+              <p className="mb-2"><strong>Veterinario:</strong> {informacionCita.veterinario}</p>
+
             </div>
           </div>
         </div>

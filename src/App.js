@@ -17,6 +17,7 @@ import Mascotaregistros from "./pages/mascota-registros";
 import Crearcita from "./pages/agendaCita";
 import CalendarioCita from "./pages/calendarioCitas";
 import DetalleCita from "./pages/detalleCita";
+import RecuperarContrasena from "./pages/recuperarcontraseña";
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
+        <Route path="/Recuperar" element={<RecuperarContrasena />} />
+
 
         <Route
           path="/*"
