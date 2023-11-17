@@ -16,8 +16,8 @@ const Sidebar = () => {
         verticalNav.classList.toggle('open');
     };
     return (
-<nav className="vertical-nav bg-light">
-    <div className="hamburger-menu" onClick={toggleMenu}>
+<nav className="vertical-nav bg-light elemento-superpuesto">
+    <div className="hamburger-menu superpuesto " onClick={toggleMenu} >
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
